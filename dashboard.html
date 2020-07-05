@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Flow Dashboard V1</title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+        <script src="index.js"></script>
+           
+	</head>    
+	<body>      
+         
+        <div class="dashpage"> 
+             <img class="mainbg" src="images/purp.jpg"/>
+            <div class="dashcontainer">
+                <img class="absimg" src="images/dashbg.jpg"/>
+                
+                <div class="dashside">
+                    
+                    <h5 class="dashaccount"><i class="fas fa-user-circle"></i>My Account</h5>
+                    <div class="dashtabs"> 
+                    <h5 class="hometab"><i class="fas fa-home"></i>Home</h5> 
+                    <h5 class="mediatab"><i class="fas fa-image"></i>Media</h5> 
+                    <h5><i class="fas fa-store"></i>Store</h5>
+                    <h5><i class="fas fa-plus"></i>Add New</h5>
+                    <h5><i class="fas fa-plug"></i>Plugins</h5>
+                    <h5><i class="fas fa-tools"></i>Tools</h5>
+                    <h5><i class="fas fa-paint-brush"></i>Design</h5>
+                    <h5><i class="fas fa-question-circle"></i>Support</h5>
+                    <h5><i class="fas fa-cog"></i>Settings</h5>
+                    </div>
+                    
+                    <h6>Flow Dashboard V1.2.1</h6>
+                </div> 
+                
+                <div class="dashcontent">
+                    <div class="dashnav">
+                        <div class="col1 dashcol">
+                        <div class="dashsearch"><i class="fas fa-search"></i><input placeholder="Search"></div>
+                        <button class="dashbtn"><i class="fas fa-plus"></i>&emsp;Create New</button> 
+                        </div> 
+                        <div class="col2 dashcol"> 
+                            <i class="fas fa-ellipsis-v"></i>
+                            <i class="fas fa-chart-bar"><p class="dashtooltip">View Sales Stats</p></i> 
+                            <img class="dashaccimg" src="images/profile.jpg"/>
+                            
+                            <i class="fas fa-bell dashnotif"><i class="notifnum">3</i><p class="dashtooltip">Notifications</p></i>
+                            <div class="notifslide">
+                                <h6>Notifications</h6>
+                                <div class="notifs">
+                                    <img src="images/person1.jpg"/>
+                                    <p>Stan Jantes sent you a <span>message</span>.<small>Dec 04 2019</small></p>
+                                </div>
+                                <div class="notifs">
+                                    <img src="images/person2.jpg"/>
+                                    <p>Jack Hanford left a review you on your <span>product</span>.<small>Dec 03 2019</small></p>
+                                </div>
+                                <div class="notifs">
+                                    <img src="images/person3.jpg"/>
+                                    <p>Jane Lorne purchased your product <span>Microsoft Surface Pro 3</span>.<small>Dec 02 2019</small></p>
+                                </div> 
+                                <div class="notifs">
+                                    <img src="images/person4.jpg"/>
+                                    <p>John Stravos recently registered as a new <span>seller</span>.<br><br>
+                                    <button>Accept</button><button>Review</button> 
+                                    <small>Dec 01 2019</small></p>
+                                </div>
+                                <div class="notifs">
+                                    <img src="images/person5.jpg"/>
+                                    <p>Lane Kent recently commented on your product <span>Apple Ipad Pro 5</span>.<small>Dec 01 2019</small></p>
+                                </div>
+                                <div class="notifs">
+                                    <img src="images/dashstats.png"/>
+                                    <p>Your monthly sales stats report is ready for December <span>review stats</span>.<small>Dec 01 2019</small></p>
+                                </div>
+                                <div class="notifs">
+                                    <img src="images/prod2.jpg"/>
+                                    <p>Your product <span>Microsoft Surface Pro 3 </span> is out of stock. <span>Restock product</span><small>Dec 01 2019</small></p>
+                                </div> 
+                                <div class="notifs">
+                                    <img src="images/person6.jpg"/>
+                                    <p>Brook Azaria recently registered as a new <span>seller</span>.<br><br>
+                                    <button>Accept</button><button>Review</button> 
+                                    <small>Dec 01 2019</small></p>
+                                </div>
+                                
+                            </div>
+                        </div>     
+                          
+                        <div class="clear"></div> 
+                    </div> 
+                    <div class="dashcol col1 dcol">
+                        <div class="dcolcont">
+                            <h4>Store</h4> 
+                            <div class="dashflex0">
+                                <div class="dashicon purpleicon">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <h5>Total Revenue</h5> 
+                                <p>$76,000</p>
+                                <small><i class="fas fa-calendar-alt"></i> This Month</small>
+                            </div> 
+                            <div class="dashflex0">
+                                <div class="dashicon ambericon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </div>
+                                <h5>Products Sold</h5> 
+                                <p>359</p>
+                                <small><i class="fas fa-calendar-alt"></i> Last 24 Hours</small>
+                            </div> 
+                            <div class="dashflex0">
+                                <div class="dashicon aquaicon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h5>Website Visits</h5> 
+                                <p>799</p>
+                                <small><i class="fas fa-calendar-alt"></i> Last 24 Hours</small>
+                            </div>
+                            <div class="dashflex0">
+                                <div class="dashicon redicon">
+                                    <i class="fas fa-user-alt"></i>
+                                </div>
+                                <h5>Active Sellers</h5> 
+                                <p>73</p>
+                                <small><i class="fas fa-calendar-alt"></i> This Year</small>
+                            </div>
+                            <div class="clear"></div>
+                            <h4>Discover</h4>   
+                            <div class="dashflex1 dflex1">
+                                <h5>New Comment</h5>
+                                <h3>Maria Kent</h3>'<small class="ratedate">2 minutes ago - Vancouver, Canada.</small>
+                                <p>"I love your new products, I had purchased your other products before but this one..."</p>
+                                <button>Manage</button>
+                            </div>
+                            <div class="dashflex1 dflex2 dashfullimg">
+                                <img src="images/prod1.jpg"/>
+                                <h5>New Review</h5>
+                                <h3>Jessica Lorne</h3>
+                                <div class="dflex2rate">    
+                                <i class="fas fa-star-half"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <div class="clear"></div> 
+                                </div><br><br> 
+                                <small class="ratedate">- 5 minutes ago - Montreal, Canada.</small><br><br>
+                                <a href="#">Approve</a><a href="#">Reject</a>
+                                <small class="rateprod">Rating on "Samsung Cases"</small>   
+                                <button>Manage</button> 
+                            </div> 
+                            <div class="dashflex1 dflex2 dflex dashuser">
+                                <img class="dashuserimg" src="images/person1.jpg"/>
+                                <div class="dashmoveright">  
+                                <h5>New User</h5>
+                                <h3>Jack Kellerman</h3>
+                                <small class="ratedate">1 hour ago - Toronto, Canada.</small><br><br>
+                                <a href="#">Accept</a><a href="#">Review User</a>
+                                </div>       
+                            </div>
+                            <div class="dashflex1 dflex dashfullimg">
+                                <img src="images/prod2.jpg"/>
+                                <h5>New Sale</h5>
+                                <h3>Microsoft Surface Pro 3</h3>
+                                <small class="ratedate">2 hour ago - Montreal, Canada.</small><br><br>
+                                <a href="#">View</a><a href="#">See Stats</a>
+                                <button>Manage</button> 
+                            </div>
+                            <div class="dashflex1 dflex">
+                                <img class="dashuserimg dashstatsimg" src="images/dashstats.png"/>
+                                <div class="dashmoveright">  
+                                <h5>New Stats</h5>
+                                <h3>Monthly Sales Report</h3>
+                                <small class="ratedate">Today - Montreal, Canada.</small><br><br>    
+                                <a href="#">View Report</a>    
+                                </div>     
+                            </div>
+                            <div class="dashflex1 dflex5-1"> 
+                                <h5>Product Watch</h5>
+                                <h3>Product quantity running low</h3>
+                                <p>There are only 2 remaining products  <span>"Microsoft Surface Pro 2"</span> left in stock.</p>
+                                <small class="ratedate">3 Hours Ago - Ottawa, Canada.</small><br><br>
+                                <a href="#">View Product</a>
+                            </div>
+                            <h4>Issues</h4>
+                            <h1>No issues.</h1>
+                            
+                            <h4>Updates</h4>
+                            <div class="dashflex1 dashupdate">
+                                <h3>SEO Booster</h3>
+                            </div> 
+                            <div class="dashflex1 dashupdate">
+                                <h3>PHP Shortcode</h3>
+                            </div>
+                            <div class="dashflex1 dashupdate">
+                                <h3>System Update</h3>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="spacer-l"></div>
+                        </div>
+                    </div> 
+                    <div class="dashcol col2 dcol">
+                        <div class="dcolcont">
+                            <h4>Inbox</h4>
+                            <div class="dashflex2 dflex dashmsg">
+                                <img class="pn2" src="images/person7.jpg"/>
+                                <div class="dashmoveright">
+                                <h5>New Message</h5> 
+                                <h3>Jeff Nuzzer - New User</h3>
+                                <small class="ratedate">30 minutes ago - Montreal, Canada.</small>
+                                </div>
+                            </div>
+                             <div class="dashflex2 dflex dashprod">
+                                <img class="pn2" src="images/person8.jpg"/>
+                                 <div class="dashmoveright">
+                                <h5>Product Add</h5> 
+                                <h3>Jake Azand</h3>
+                                  <small class="ratedate">40 minutes ago - Montreal, Canada.</small>
+                                 </div>
+                            </div>
+                            <div class="dashflex2 dflex9 dashmsg dashfeat">
+                                <h5>New Message</h5>
+                                <h3>Hank Reeves</h3>
+                                <p>"Hi there, I was having issues with seeing my sold products this month..."</p>
+                                <img class="pn2" src="images/person2.jpg"/>
+                                <small class="ratedate">45 minutes ago - Montreal, Canada.</small>
+                            </div> 
+                            <div class="dashflex2 dflex9 dflex dashmsg">
+                                <img class="pn2" src="images/person4.jpg"/>
+                                <div class="dashmoveright">
+                                <h5>New Message</h5>
+                                <h3>Alex Jones</h3>
+                                <small class="ratedate">1 hour ago - Montreal, Canada.</small>
+                                </div>    
+                            </div>
+                            <div class="dashflex2 dflex dashlogin">
+                                <img class="pn2" src="images/person6.jpg"/>
+                                <div class="dashmoveright">
+                                <h5>User Login</h5>
+                                <h3>Stan Jantes</h3>
+                                <small class="ratedate">1 hour ago - Montreal, Canada.</small>
+                                </div>
+                            </div>
+                            <div class="dashflex2 dflex9 dashprod dashfeat">
+                                <h5>Product Add</h5>
+                                <h3>Stephanie Gargalite</h3>
+                                <p>Added 3 new products in the "mobile device" category</p>
+                                <img class="pn2" src="images/person5.jpg"/>
+                                <small class="ratedate">2 hours ago - Montreal, Canada.</small>
+                            </div> 
+                            <div class="dashflex2 dflex dashmsg">
+                                <img class="pn2" src="images/person9.jpg"/>
+                                <div class="dashmoveright">
+                                <h5>New Message</h5>
+                                <h3>Amanda Hillock</h3>
+                                <small class="ratedate">2 hour ago - Montreal, Canada.</small>
+                                </div>    
+                            </div>
+                            <div class="dashflex2 dflex dashmsg">
+                                <img class="pn2" src="images/person10.jpg"/>
+                                <div class="dashmoveright">
+                                <h5>New Message</h5>
+                                <h3>Janet Hancock</h3>
+                                <small class="ratedate">2 hour ago - Montreal, Canada.</small>
+                                </div>    
+                            </div>
+                            <h4>Urgent Alerts</h4>
+                            <h1>No urgencies</h1>
+                            
+                            
+                            <div class="spacer-l"></div> 
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Dashboard Components -->
+                 <div class="componentszone">
+                
+                
+           
+                
+                
+                </div>
+                
+                
+                
+                <div class="clear"></div> 
+            </div>  
+               
+              
+        </div>   
+        
+         
+        
+        
+	</body>
+</html>

@@ -1,0 +1,796 @@
+/* Dashboard CSS */
+/*Purple: #9030f1; pink: #C402AE Amber: #FFAE00 */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Lato;
+    background: #f4f4f4;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    position: relative;
+}
+.clear {
+    clear: both;
+}
+.themecolor {
+    color:#6350C7;
+}
+.themebg {
+    background: #6350C7;
+}
+.themeborder {
+    border: 2px solid #6350C7;
+}
+.spacer-s {
+    height: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #6350C7;;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.sidebar::-webkit-scrollbar, .dashside::-webkit-scrollbar, .notifslide::-webkit-scrollbar {
+  width: 0px;
+}
+button {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.spacer-l {
+    height: 100px;
+}
+
+
+
+.dashpage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.mainbg {
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.dashbg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+}
+.dashcontainer {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background: rgba(255,255,250,0.6);
+    box-shadow: 0px 0px 23px -2px rgba(0,0,0,0.35);    
+    border-radius: 10px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+.absimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+}
+
+.dashside {
+    position: relative;
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #bbb;
+    float: left;
+    overflow-y: scroll;
+}
+.dashside h5 {
+    display: block;
+    font-size: 18px;
+    color: #777; 
+    font-weight: 400;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin: auto;
+}
+.dashside h5:hover {
+    background: linear-gradient(90deg, rgba(144,48,241,1) 0%, rgba(196,2,174,1) 100%);
+    color: white;
+}
+.dashside i {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.spacer {
+    height: 50px;
+}
+.dashaccount {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 20px!important;
+    color: #5E14A8!important;
+}
+.dashside h6 {
+    position: relative;
+    margin: 20px auto;
+    padding-top: 20px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-size: 13px;
+    color: #9030f1;
+    border-top: 1px solid #aaa;
+}
+.dashsidecaret {
+    position: relative;
+    opacity: 0;
+    left: 0px;
+    transition: opacity 0.2s, left 0.7s;
+}
+.dashside h5:hover .dashsidecaret {
+    left: 10px;
+    opacity: 1;
+}
+
+.dashcontent {
+    position: relative;
+    left: 0px;
+    height: 100%;
+    width: calc(100% - 201px);
+    float: right;
+    transition: all 0.5s;
+}
+.dashnav {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 62px;
+    border-bottom: 1px solid #aaa;
+    z-index: 100;
+}
+.dashsearch {
+    position: relative;
+    float: left;
+    height: 100%;
+}
+.dashsearch i {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: #555;
+    z-index: 10;
+}
+.dashsearch input {
+    position: absolute;
+    bottom: 12px;
+    left: 60px;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none;
+}
+.dashbtn {
+    position: relative;
+    float: right;
+    top: 10px;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, rgba(144,48,241,1) 0%, rgba(196,2,174,1) 100%);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+    right: 20px;
+}
+.dashbtn:hover {
+    box-shadow: 0px 10px 35px -13px rgba(144,48,241,1);
+    transform: scale(1.02);
+}
+
+.dashcol {
+    position: relative;
+    height: 100%;
+    float: left;
+}
+.col1 {
+    width: 70%;
+}
+.col2 {
+    width: 30%;
+}
+.dashaccimg {
+    position: relative;
+    top: 10px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #9030f1;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.dashnotif {
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    top: 20px;
+    font-size: 23px;
+    color: #555;
+    cursor: pointer;
+}
+.dashnotif:hover .dashtooltip {
+    opacity: 1;
+} 
+.notifnum {
+    position: relative;
+    font-style: normal;
+    font-size: 14px;
+    top: -15px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    background: #9030f1;
+    color: white;
+    font-weight: 100;
+}
+.fa-ellipsis-v {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 23px;
+    color: #555;
+    cursor: pointer;
+}
+.dashnav .fa-chart-bar {
+    position: relative;
+    top: 20px;
+    left: 60px;
+    font-size: 23px;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.dashnav .fa-chart-bar:hover {
+    color: #9030f1;
+}
+.dashtooltip {
+    position: absolute;
+    font-size: 12px;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    top: 35px;
+    margin: auto;
+    left: -40px;
+    color: #f1f1f1;
+    opacity: 0;
+    transition: all 0.3s;
+    white-space: nowrap;
+    font-family: Lato;
+}
+.notifslide {
+    position: relative;
+    display: none;
+    width: 300px;
+    height: 290px;
+    padding: 10px 0px;
+    padding-top: 0px;
+    left: 125px;
+    top: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 19px -12px rgba(0,0,0,0.75);
+    overflow-y: scroll;
+}
+.notifslide h6 {
+    font-size: 14px;
+    margin: 0px auto;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e4e4e4;
+    color: #aaa;
+}
+.notifs {
+    position: relative;
+    display: block;
+    width: 95%;
+    padding: 10px 0px;
+    height: auto;
+    margin: 10px auto;
+    transition: all 0.3s;
+    border-radius: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+.notifs:hover {
+    background: #f9f9f9;
+}
+.notifs img {
+    position: relative;
+    top: 0px;
+    left: 10px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+.notifs p {
+    top: -10px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 200;
+}
+.notifs span {
+    font-weight: 900;
+}
+.notifs small {
+    position: relative;
+    display: block;
+    float: none;
+    color: #aaa;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.newnotif {
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    font-size: 13px;
+    color: #9030f1;
+}
+.clearnotifs {
+    position: relative;
+    display: block;
+    width: 95%;
+    text-align: center;
+    padding: 10px 0px;
+    height: 30px;
+    margin: 10px auto;
+    transition: all 0.3s;
+    border-radius: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+}
+.clearnotifs small {
+    color: #555;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+.clearnotifs small:hover {
+    color:#9030f1;
+}
+.notifs button {
+    position: relative;
+    margin-top: 10px;
+    font-size: 13px;
+    padding: 8px 13px;
+    background: #f1f1f1;
+    border-radius: 30px;
+    border: none;
+    margin-right: 10px;
+}
+.notifs button:hover {
+    background: #9030f1;
+    color: white;
+}
+
+.fa-chart-bar:hover .dashtooltip {
+    opacity: 1;
+} 
+.dcol {
+    position: relative;
+}
+.dcol h4 {
+    margin: auto;
+    border-bottom: 2px solid #9030f1;
+    padding-bottom: 10px;
+    width: 50px;
+    margin-left: 0px;
+    white-space: nowrap;
+}
+.dcolcont {
+    position: relative;
+    padding: 20px;
+    height: 100%;
+    overflow-y: scroll;
+    top: 75px;
+}
+.dcolcont::-webkit-scrollbar {
+  width: 0px;
+}
+.dashflex1 {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0px 0px 19px -12px rgba(0,0,0,0.75);
+    padding: 20px 0px;
+    transition: all 0.4s;
+}
+.dashflex2 {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 19px -12px rgba(0,0,0,0.35);
+    margin: 30px auto;
+    padding: 20px 0px;
+    transition: all 0.4s;
+}
+.dashflex0:hover, .dashflex1:hover, .dashflex2:hover {
+    box-shadow: 0px 0px 19px -7px rgba(0,0,0,0.75);
+}
+.dflex1 {
+    background-image: url(images/purplebg.jpg);
+    background-position: bottom;
+}
+.dashfeat {
+    background-image: url(images/pinkbg.jpg);
+    background-position: right;
+}
+.dflex, .dflex2 {
+    background: rgba(255,255,255,0.8);
+}
+ 
+.dflex2 i {
+    color: #9030f1!important;
+}
+
+.dashflex1 i {
+    position: relative;
+    color: #9030f1;
+    float: right;
+    top: 0px;
+    margin: auto 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.dashflex1 h5 {
+    margin: auto;
+    font-size: 14px;
+    font-weight: 300;
+    color: #aaa;
+}
+.dashflex1 h3 {
+    color: #aaa;
+    font-size: 27px;
+}
+.dashflex1 p {
+    color: #ccc;
+    left: 20px;
+    top: 10px;
+    font-size: 14px;
+}
+.dashflex1 span {
+    margin-left: 30px;
+}
+.dashflex1 button {
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    border-radius: 20px;
+    padding: 7px 15px;
+    background: none;
+    border: 2px solid #9030f1;
+    color: #9030f1;
+}
+.dashflex1 button:hover {
+    background: linear-gradient(90deg, rgba(144,48,241,1) 0%, rgba(196,2,174,1) 100%);
+    color: white!important;
+}
+.dflex1 button {
+    border: 2px solid #C402AE!important;
+    color: white!important;
+}
+.dashclick {
+    background: linear-gradient(90deg, rgba(144,48,241,1) 0%, rgba(196,2,174,1) 100%);
+    color: white!important;
+}
+
+.dflex1 h5, .dflex5-1 h5 {
+    top: 40px;
+    left: 20px;
+    color: #d1d1d1!important;
+}
+.dflex1 h3, .dflex5-1 h3{
+    top: 20px;
+    left: 20px;
+    color: white!important;
+}
+.dflex1 i, .dflex5-1 i {
+    color: #d1d1d1;
+}
+
+.dashflex1 img {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    float: left;
+}
+.dashflex1 h5 {
+    top: 30px;
+    left: 20px;
+    color: #555;
+}
+.dashflex1 h3 {
+    top: 10px;
+    left: 20px;
+    color: #555;
+    margin-bottom: 15px;
+}
+.fa-star, .fa-star-half {
+    margin: auto 0px !important;
+    padding: 2px!important;
+}
+.dflex2rate {
+    position: relative;
+    float: left;
+    left: 20px;
+}
+.ratedate {
+    position: relative;
+    float: left;
+    top: 12px;
+    color: #aaa;
+    left: 20px;
+}
+.rateprod {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+.dashflex1 a {
+    position: relative;
+    text-decoration: none;
+    color: #9030f1;
+    margin: auto 20px;
+    margin-left: 0px;
+    left: 15px;
+    top: 5px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+.dashflex1 a:hover {
+    background: rgba(144,48,241,0.05);
+}
+
+.dashfeat h5 {
+    color: #d1d1d1!important;
+}
+.dashfeat h3 {
+    color: white!important;
+}
+.dashfeat p {
+    color: #d1d1d1!important;
+}
+.dashflex2 .fa-ellipsis-v {
+    position: absolute;
+    top: 10px;
+    color: #d1d1d1!important;
+    font-size: 15px;
+    right: 10px;
+    left: auto;
+    padding: 5px;
+}
+.pn2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.dashflex2 i {
+    margin-right: 10px;
+}
+
+.dashuserimg {
+    border-radius: 50%;
+    width: 120px!important;
+    height: 120px!important;
+    left: 20px;
+    top: 20px;
+}
+.dashmoveright {
+    position: relative;
+    float: left;
+    margin-left: 50px;
+}
+.dashstatsimg {
+    border-radius: 0px;
+}
+
+
+.dashflex0 {
+    position: relative;
+    width: 240px;
+    height: 210px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    margin: 20px 15px;
+    margin-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+    float: left;
+    box-shadow: 0px 0px 19px -12px rgba(0,0,0,0.45);
+    transition: all 0.4s;
+}
+.dashicon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.75);
+}
+.purpleicon {
+    background: #9030f1;
+    top: -20px;
+}
+.ambericon {
+    background: #FFAE00;
+    top: -20px;
+}
+.aquaicon {
+    background: #008F9C;
+    top: -20px;
+}
+.redicon {
+    background: #E3004F;
+    top: -20px;
+}
+.dashicon i {
+    position: relative;
+    font-size: 35px;
+    color: white;
+    margin-top: 30px;
+}
+.dashflex0 h5 {
+    margin-top: 0px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 100;
+}
+.dashflex0 p {
+    position: relative;
+    color: #9030f1;
+    font-size: 28px;
+    top: -12px;
+    margin: auto;
+}
+.dashflex0 small {
+    position: relative;
+    margin: auto;
+    top: 0px;
+    font-size: 12px;
+    color: #777;
+}
+.dashflex0 .fa-calendar-alt {
+    margin-right: 10px;
+}
+.dflex5-1 {
+    background-image: url(images/purpbg2.jpg);
+    background-repeat: no-repeat;
+}
+.dflex5-1 span {
+    margin-left: 0px;
+}
+.dflex5-1 a {
+    color: #d1d1d1;
+}
+.dflex5-1 a:hover {
+    background: rgba(255,255,255,0.1);
+}
+.dashfullimg {
+    padding: 0px;
+}
+.dashfullimg i {
+    top: 20px;
+}
+.dashfullimg img {
+    height: 210px;
+}
+.dashcol h1 {
+    color: #777;
+    font-weight: 100;
+}
+
+.dashflex2 h5 {
+    color: #777;
+    left: 20px;
+    margin-bottom: 0px;
+}
+.dashflex2 h3 {
+    color: #777;
+    left: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.dashflex2 p {
+    left: 20px;
+    color: #777;
+    font-size: 13px;
+    margin-top: 10px;
+    width: 90%;
+}
+.dashfeat img {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+.dashmsg {
+    height: auto
+}
+.dashfeat small  {
+    margin-top: 10px;
+}
+.dashflex2 .dashmoveright {
+    position: relative;
+    left: 20px;
+    top: -20px;
+}
+ 
+.dashupdate {
+    position: relative;
+    width: 240px;
+    height: 140px;
+    margin-left: 0px;
+    background: #9030f1;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin: 20px 30px;
+    transition: all 0.4s;
+    margin-left: 0px;
+}
+.dashupdate:hover {
+    box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.75);
+}
+.dashupdate i {
+    position: absolute;
+    font-size: 80px;
+    margin: auto;  
+    left: 0px;
+    right: 0px;
+    top: 20px;
+    color: #e1e1e1;
+}
+.dashupdate h3 {
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 120px;
+    bottom: 10px;
+    font-weight: 100;
+    color: #e1e1e1;
+    font-size: 20px;
+}
